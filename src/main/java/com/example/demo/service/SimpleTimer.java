@@ -6,10 +6,7 @@ import java.time.format.DateTimeFormatter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-import lombok.extern.slf4j.Slf4j;
-
 @Service
-@Slf4j
 public class SimpleTimer {
 
 	@Value("${config.camle.timer.counter}")
@@ -20,7 +17,7 @@ public class SimpleTimer {
 
 		while (timerCounter > 0) {
 			ZonedDateTime now = ZonedDateTime.now();
-			log.info("Count: [{}], Printing current time: [{}]", timerCounter, dtf.format(now));
+			System.out.println("Current Time: " + dtf.format(now));
 			timerCounter--;
 		}
 	}

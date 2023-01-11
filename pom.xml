@@ -78,11 +78,8 @@
 		</dependency>
 
 		<!-- Camel: End -->
-		<dependency>
-			<groupId>org.projectlombok</groupId>
-			<artifactId>lombok</artifactId>
-		</dependency>
-
+		<!-- failed in ocp deployment <dependency> <groupId>org.projectlombok</groupId> 
+			<artifactId>lombok</artifactId> </dependency> -->
 	</dependencies>
 
 	<build>
